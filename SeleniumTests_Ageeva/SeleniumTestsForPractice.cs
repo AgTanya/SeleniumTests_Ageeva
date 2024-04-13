@@ -38,3 +38,4 @@ public class SeleniumTestsForPractice
         driver.Quit();
     }
 }
+// пробую через git Extensions
