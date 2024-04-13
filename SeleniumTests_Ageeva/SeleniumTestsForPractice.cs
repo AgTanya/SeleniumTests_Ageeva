@@ -16,8 +16,7 @@ public class SeleniumTestsForPractice
         var driver = new ChromeDriver(option);
         //перейти по ссылке
         driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru");
-        //ждем 5 сек и затем переходим к поиску
-        Thread.Sleep(5000);
+
         //вести логин и пароль
         //находим элемент
         var login = driver.FindElement(By.Id("Username"));
@@ -29,8 +28,6 @@ public class SeleniumTestsForPractice
 
         var btn = driver.FindElement(By.Name("button"));
         btn.Click();
-        
-        Thread.Sleep(3000);
         
         //Проверка, что мы находимся на странице
         var currentUrl = driver.Url;
