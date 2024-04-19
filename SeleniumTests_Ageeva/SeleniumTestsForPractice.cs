@@ -139,13 +139,13 @@ public class SeleniumTestsForPractice
         driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru");
         
         var login = driver.FindElement(By.Id("Username"));
-        login.SendKeys("agtanyav@yandex.ru");
+        login.SendKeys("");
 
         var password = driver.FindElement(By.Id("Password"));
-        password.SendKeys("Lenovo2001!");
+        password.SendKeys("");
 
-        var btn = driver.FindElement(By.Name("button"));
-        btn.Click();
+        var btnAuthorization = driver.FindElement(By.Name("button"));
+        btnAuthorization.Click();
         
     }
     
